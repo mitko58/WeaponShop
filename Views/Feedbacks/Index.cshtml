@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<WeaponShop.Models.Feedback>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Feedback";
 }
 
-<h2>Index</h2>
+<h2>Feedback</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -22,6 +22,7 @@
             @Html.DisplayNameFor(model => model.Title)
         </th>
         <th>
+            Rating/
             @Html.DisplayNameFor(model => model.Content)
         </th>
         <th>
@@ -31,6 +32,7 @@
             @Html.DisplayNameFor(model => model.isEnabled)
         </th>
         <th>
+            Visited/
             @Html.DisplayNameFor(model => model.Reads)
         </th>
         <th></th>
